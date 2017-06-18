@@ -1,5 +1,5 @@
 import vk, os, math, json,time
-from messages_list import messages_list
+from messages_list import print_messages
 # <Авторизация>
 #Для авторизации перейти по ссылке и скопировать поле acess_token. https://oauth.vk.com/authorize?client_id=ID_ВАШЕГО_ПРИЛОЖЕНИЯ&redirect_uri=https://oauth.vk.com/blank.html&response_type=token&scope=8194
 #app_id = 6071061
