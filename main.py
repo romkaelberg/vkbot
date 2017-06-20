@@ -7,8 +7,7 @@ access_token = "e473baceb5969241b87d9d37ff7a32e6d8d29fe7237401512498931f3e158083
 session = vk.Session(access_token=access_token)
 vkapi = vk.API(session)
 
-# </Авторизация>
-
+#</Авторизация>
 #<Получаем новые сообщения, через связь с LongPool сервером>
 def messages_flow():
     server_connect = vkapi.messages.getLongPollServer()
@@ -39,6 +38,6 @@ messages = vkapi.messages.getDialogs()
 
 number_of_messages = messages[0]
 
-messages_list(messages, number_of_messages,vkapi)
+print_messages(messages, number_of_messages,vkapi)
 
 # messages_flow()
