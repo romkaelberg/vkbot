@@ -31,8 +31,6 @@ if command == "debug":
     print("|MESSAGES|")
     for i in range(4):
         print(messages[i])
-if command == "check":
-    check(vkapi)
 if command == "get_msg":
     print_messages(messages, number_of_messages, vkapi)
 if command == "ans":
