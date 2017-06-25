@@ -3,11 +3,6 @@ TOKEN_APIXUWEATHER= ""
 import vk, os, math, json,time,re,requests
 from geopy.geocoders import GoogleV3
 
-def enter_command():
-    command = input("enter command: ")
-    return command
-# command = enter_command()
-
 session = vk.Session(access_token=TOKEN_VK)
 API_VK = vk.API(session)
 
@@ -69,10 +64,6 @@ while True:
                 message = _messages_data[i]['body']
                 message_id = _messages_data[i]['mid']
                 user_id = _messages_data[i]['uid']
-                # print(message_id)
-                # print(message)
-
-                # if _checker_of_command == True:
                 _command_handler = command_handler(message)
 
                 if _command_handler != False:
